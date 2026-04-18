@@ -1,0 +1,69 @@
+Interview Session:
+    Web Automation
+    CICD (Jenkins, Gtihub Actions)
+
+1. Web Automation:
+
+    URL: https://library2.cydeo.com/
+    Username: student5@library
+    Password: libraryUser
+
+    Happy Path:
+        User can login by pressing Enter key after the correct email & correct password
+
+    Unhappy Path:
+        User can not login by entering incorrect email & incorrect password
+
+Playwright: Saadi (Volodymyr Besh)
+    Open "playwright-automation" project
+
+Selenium: Javid Ahadov (Mahpirat)
+    Create a new maven project.
+    Install Selenium and TestNG dependencies
+
+
+
+Playwright:
+    test('description', async ({page}) => {
+
+        navigate to URL
+
+        locate element
+
+        interactions...
+
+        expect()..
+
+    });
+
+
+Selenium:
+    @Test
+    public void test(){
+
+        Set up the WebDriver...
+
+        ImplicitWait
+
+        Maximize the size
+
+        navigate to URL
+
+        locate element
+
+        interactions...
+
+        (check if explicit wait conditions will be needed)
+
+        Assert.assertTure/Assert.assertEquals();
+
+    }
+
+=============================================
+
+next week: Module 05: Playwrigh farmework 
+
+Next Next week: Playwirght with TypeScript
+
+1 Week Self study (work on user stories, missing videos )
+

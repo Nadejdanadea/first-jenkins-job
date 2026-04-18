@@ -1,0 +1,162 @@
+Interview Session:
+	
+	Build tools
+    Programming & Automation
+
+Please get your sublime app and be ready to code.
+
+1. Maven vs NPM
+
+2. Merge two arrays.
+
+3. Positive vs negative vs Edge
+
+    positve ===> testing with valid data ===> happy path
+    negative ===> testing with invalid data ===> unhappy path
+    Edge   ====> testing boundary (unusual, max limits etc)  ===> test to break
+
+4. Write manual test cases
+
+5. Automating
+
+
+Test Case: description
+    Step1:
+    Step2
+    .....
+
+    Expected:
+
+
+    Data: 
+
+
+LogIn Form:
+
+    Positive Test Case:
+        P01 -->User can login by entering correct email & correct password & clicking signin (Jelena Zivanovic)
+        P02 --> User can login by pressing Enter key after the correct email & correct password (Diana Hodge)
+        P03 --> User can copy and paste the credentials into the inbox & click signin/press enter (Muhtar)
+
+    Negative Test Case:
+        N01 --> User can not login by entering incorrect email & incorrect password (N01)
+        N02 --> User can not login by entering correct email & incorrect password (Gulchin Huseynova)
+        N03 --> Leave the field empty and clicking signin (Nadia)
+        N04 --> invalid format of the email (Volodymyr Besh)
+    
+
+    Edge Test Case:
+        E01 --> User enter very long email and password. (Khilola Burkhanova)
+        E02 --> USer enter very short password. (Saadi Boussaa)
+        E03 --> Email with all uppercase letters (Amantur Ashirbekov)
+
+AC:
+    User logs in with correct credentials
+
+
+
+
+muhtar@cydeo.com
+
+muhtarexample@.com
+
+
+Email format:
+    name@domain.com
+
+
+=====================================================
+
+Test Case: Login with very long email and password.
+
+    Step1: go to login page
+    Step2: Enter very long email.
+    Step4: Enter very long password.
+    Step5: Click Login button.
+
+Expected: "Invalid email or password", or  " email and password too long" message appears
+
+
+
+
+Test Title: Login with valid eamil and invalid password
+Test ID: N02
+
+    Step1. Open log In page
+    Step2. Enter valid Email
+    Step3. Enter invalid password
+    Step4. Click Sign In button
+
+Expected result shuld be:
+
+Error message
+User can not log in , because of the invalid password
+
+
+
+Test Case: User can login by entering correct email & correct password & clicking sing in
+    step 1: Open chrome browser
+    step 2: Navigate to "https://hive.cydeo.com/login"
+    step 3: Verify user is on the login page
+    step 4: User enters the valid username in the Username box
+    step 5: User enters the valid passworf in the Password box
+    step 6: User click on Continue button
+
+
+
+
+Test Case: Verify user cannot login with incorrect email and incorrect password
+    Step1: Navigate to the login page (or we can have precondition )
+    Step2: Enter incorrect email
+    Step3: Enter incorrect password
+    Step4: Click on Sign In button
+
+    Expected:
+        User is not logged in
+        Error message is displayed --> "Invalid email or password"
+        User remains on the login page
+
+    Data:
+        Email: wrong@email.com --> shahnozagmail.com 
+        Password: wrongPassword abc 123 
+
+
+
+Test Case: Verify entering email with all upper case letters would be invalid.
+
+    Step 1: User enters an email with all upper case letters
+    Step 2: User enters correct password following the requirements
+    Step 3: User clicks the Sign In button or ENTER key 
+
+
+    Expected: User should get "Invalid email or password" error message.
+
+    Data: 
+            email: EXAMPLE@CYDEO.COM
+            password: 121345abc!
+
+
+
+
+Next weeK:
+    Jenkins & GitHub Actions
+
+Next next week:
+    Framework Utlization
+
+
+Next Next Next Week:
+    TypeScript
+
+
+Next Next Next Next Week:
+    SQL Programming
+    API Intro (Postman)
+
+Next Next Next Next Week:
+    API Automation with Playwright
+
+
+
+1 Week of Bootcamp
+

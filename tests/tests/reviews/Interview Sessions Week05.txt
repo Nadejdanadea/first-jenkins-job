@@ -1,0 +1,98 @@
+Interview Session:
+    Tell me About Your Framework
+    Manual Testing Workflow
+    Automation Workflow
+
+
+Tell me about your frameowrk:
+
+    Cucumber BDD Framework:
+        Business Layer:
+            I start workong on bsuiness latyer first in my framework, 
+            I create feature files for my user stories and write the scenarios of the user story in feature file
+            I make sure that I have scanrios that can cover acceptance criteria
+
+        Technicial Layer:
+            I create step defintions for my feature scenarios' steps by running my runner class
+            I put those step defintions into my stepsdefinition package, then I will start writing the automation scripts
+            After finish writing the automation scripts, I run the automation script to test it 
+
+            If all the passed ===> Push the codes to github, to my feature branch ==> create pull request 
+
+            If Failed:
+                Re-test it to ensure if it's a bug 
+
+                If it's a bug:
+                    Reach out Developers
+
+                    Create bug ticket on jira
+                            Steps to reproduce the bug (expect vs actual).
+
+                            Ny evidance including screenshots etc if any
+
+                            Severity of the bug.
+
+                            Assign the developer.
+
+
+    Selenium with Java (or Playwright with TypeScript)
+
+    Maven as buidl tool (or NPM for playwright)
+
+    POM (Page Object Module): 
+                For each web page that I am automating, I create seperate class, 
+                I store each Page's elements and Page Actions ==> SO that I can use them whenever theya re needed in my tests.
+
+    Parallel Execution:
+        Selenium:
+            I use TestNG for the parallel testing
+                I will set the parallel to true, then I will set the thread-count number to  3 or 4 in my tesng.xml file.
+
+        Playwright:
+            Playwright has built in parallel configuration, I will just set the number of workers in configuration file.
+
+    
+    Cross Browser Testing:
+        Selenium:
+            I have this Driver class that can return me the webdriver objects, depending on what I set the browser name to in my properties file.
+
+        Playwright:
+            I configure the project property for the browsers in my playwright config file
+
+    Re-run failed tests:
+        Selenium:
+            I have FailedRunner Class that can get all the failed tests from the target folder' and run them.
+
+        Playwright:
+            I configure the reties in my playwright configuration
+
+
+QA Manager:
+    if Ny approvals needed from tetsing side, technical side, or approches etc.
+
+Scrum Master:
+    if you have any blockers
+
+BA/PA:
+    for clarifications on requirments
+
+Developers:
+    For any bugs you found.
+    For udnerstanding the feature/functionality.
+
+
+Daily standup:
+    For giving updates to each other on:
+        WHat did I do yesterday, What am I doing today, any blockers
+
+
+Smoke Testing, Regression testing
+
+Next Week: 
+    Playwright with TypeScript
+
+    Playwright TDD 
+    Playwrigfht BDD
+
+    Template Framework
+

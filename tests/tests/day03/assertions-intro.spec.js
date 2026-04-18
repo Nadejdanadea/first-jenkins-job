@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("Test Group", () => {
-  // create beforeEach to navigate to https://practice.cydeo.com/.
+  // create beforeEach to navigate to https://the-internet-5chk.onrender.com/.
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://practice.cydeo.com/");
+    await page.goto("https://the-internet-5chk.onrender.com/");
 
     await expect(page).toHaveTitle("Practice");
 

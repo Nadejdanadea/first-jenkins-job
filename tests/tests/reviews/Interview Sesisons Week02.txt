@@ -1,0 +1,176 @@
+Interview Session:
+	
+	UI Automation Tech Stack
+
+
+1. Tell me about your web automation technology stack.
+		
+		Selenium
+			Programming Language: Java
+			Test Runner: JUnit/TestNG
+			Parallel: Selenium Grid/TestNG
+
+		Playwright
+			Programming Language: JavaScript/TypeScript (Recommanded)
+
+
+2. What are the differences between Playwright and Selenium?
+		
+		Selenium Disadvantages:
+			Flaky tests
+			Explicit waits 
+			Passing Rate Tests (80%) in regression
+
+			JUnit, Selenium Grid
+
+
+		Playwright Advantages:
+			Has Auto waiting
+			Has Retries
+			Has its own test runner
+
+
+3. How do you handle parallel execution?
+		
+		Selnium
+			TestNG: I configure the test suits in the testng.xml file, I set the number of thread-count and set the parallel execution to true, so that my tests can run parallelly.
+
+		Playwright:
+			I set the number of works in playwright config file
+
+
+4. What types of reports have you used?
+
+		Selenium:
+			Cucumber HTML report
+
+		Playwright
+			Has its own HTML report
+
+
+		Allure HTML report I have used as well
+
+
+5. How do you perform cross-browser testing?
+
+		Selenium
+			In my framework I have Driver Class that can set the different webdriver instances, and I configure the browser anme in my Configuration.peroperties file.
+
+		Playwright
+			I configure the browser(s) in my playwright.config file
+
+
+6. How do you handle dynamic elements?
+		
+		customized xpath (contains, startswith etc)
+
+		<input id="abcd12366">
+
+		//input[conatins(@id, 'abcd')]
+
+
+
+7. How do you debug failed tests?
+		
+		Selenium:
+			check the logs, console output, user IntelliJ Debugger (step into bttn), and re-run it
+
+
+		Playwright:
+			check the Trace/Video
+
+
+8. How do you rerun only the failed tests?
+		
+		Selenium
+			In my framework, I have failedTestRunner class, everyytime after cuckes runenr is executed, all trhe failed tests will besaved in rerun text file, then FailedTestRunner class can run all those tests
+
+
+		Playwright:
+			I configure the retries and set it to 1 in my playwright config file
+
+
+9. How do you handle flaky tests?
+	
+	Selenium
+
+		I use explicit wait to give conditional timeouts for explicit actiosn or steps that might take some time.
+
+		I will try to implement our farmework utility class methods rather than calling the selenium methods. 
+
+
+		Thread.sleep(10000);
+
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.unitl(ExpectedConditions.elementTobeVisible(elemnt));
+
+	
+	Playwright
+		Has autowaiting, I will also set the re-tries in playwright config file
+
+		await element.click();
+
+
+10. How do you perform scrolling?
+		
+		Selenium
+			I use JavaScriptExecutor to perom the scroll actions. 
+			in my framework, I have BrowserUtility class that already contains scrioll actions, I can just call them asd use them
+
+				JavaScriptExecutor js = (JavaScriptExecutor)driver;
+				js.executeScript("scroll(x, 200)")
+				js.executeScript("scrollToElement(element)")
+
+					
+		Playwright
+			Has auto-scrolling
+
+
+11. How do you perform verification & validation in automation?
+		
+		Selenium:
+			I use the JUnit assertions
+				assertEquals(exepctedResult, actualResult);
+				assertTrue(boolean);
+
+		Playwright:
+			I use expect method.
+
+
+12. How do you handle and manage multiple web elements during UI automation?
+	
+		Selenium
+			I use findElements() method to lcaote multiple elements as a List
+			Then iterate them using the loop.
+
+		Playwright
+			I use locator().all() method to locate multiple elements as an Array
+			Then iterate them using the loop.
+
+
+13. How do you manage dependencies in your automation framework?
+		
+		Selenium
+			I open the POM xml file, then add the maven dependcy to the POM xlm.
+
+
+		Playwright
+			I add the dependcies in package.json, and then give `npm install` to add the dependency livbraries.
+
+
+14. Can you explain promises in Playwright using JavaScript/TypeScript?
+		
+		In playwright we have lost of methods using promises which refer to the event that will occure in the future, and when I deal with those type of scenarios, I give await keyword for the promise methods of the playwright.
+	
+
+	await inputBox.fill("Apple");
+
+
+15. Tell me about the AI tools you know and have used for automation.
+
+
+
+
+
+

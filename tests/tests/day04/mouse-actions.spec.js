@@ -1,9 +1,9 @@
 import { test } from "@playwright/test";
 
 test.describe("Test Group", () => {
-  // create a before to navigate to https://practice.cydeo.com/
+  // create a before to navigate to https://the-internet-5chk.onrender.com/
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://practice.cydeo.com/");
+    await page.goto("https://the-internet-5chk.onrender.com/");
   //  await page.waitForTimeout(3000);
   });
 

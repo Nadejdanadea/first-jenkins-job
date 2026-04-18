@@ -2,9 +2,9 @@ import { test } from "@playwright/test";
 
 test.describe("Test Group", () => {
 
-  // create beforeEach to navigate to https://practice.cydeo.com/
+  // create beforeEach to navigate to https://the-internet-5chk.onrender.com/
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://practice.cydeo.com/");
+    await page.goto("https://the-internet-5chk.onrender.com/");
   });
 
 
@@ -48,3 +48,22 @@ test.describe("Test Group", () => {
   });
 
 });
+
+
+test.describe('', () => {
+
+  test.beforeEach(async ({ page }) => {
+    
+  })
+  
+  test.afterEach(async ({ page }) => {
+    
+  })
+  
+
+  test('A', async ({ page }) => {
+    
+  })
+  
+  
+})

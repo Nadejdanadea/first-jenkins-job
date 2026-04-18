@@ -4,7 +4,7 @@ test.describe("Test Group", () => {
 
     
     test.beforeEach(async ({ page }) => {
-        await page.goto("https://practice.cydeo.com/javascript_alerts");
+        await page.goto("https://the-internet-5chk.onrender.com/javascript_alerts");
     });
 
     test("Regular Alert", async ({ page }) => {

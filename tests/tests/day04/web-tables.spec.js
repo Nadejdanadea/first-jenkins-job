@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 test('Web Table Practice', async ({ page }) => {
     
-    await page.goto("https://practice.cydeo.com/web-tables");
+    await page.goto("https://the-internet-5chk.onrender.com/web-tables");
 
     let table = page.locator("//table[@id='ctl00_MainContent_orderGrid']");
     
@@ -25,7 +25,7 @@ test('Web Table Practice', async ({ page }) => {
 
 test('Web Table Practice2', async ({ page }) => {
      
-    await page.goto("https://practice.cydeo.com/web-tables");
+    await page.goto("https://the-internet-5chk.onrender.com/web-tables");
 
     let table = page.locator("//table[@id='ctl00_MainContent_orderGrid']");
     
@@ -48,7 +48,7 @@ test('Web Table Practice2', async ({ page }) => {
 
 test('Web Table Practice3', async ({ page }) => {
      
-    await page.goto("https://practice.cydeo.com/web-tables");
+    await page.goto("https://the-internet-5chk.onrender.com/web-tables");
 
     let table = page.locator("//table[@id='ctl00_MainContent_orderGrid']");
 

@@ -5,7 +5,7 @@ test.describe("Test Group", () => {
   let elements;
 
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://practice.cydeo.com/");
+    await page.goto("https://the-internet-5chk.onrender.com/");
     elements = await page.locator("//ul[@class='list-group']/li/a").all()
   });
 
