@@ -7,17 +7,20 @@
     "tests:headless": "npx playwright test",
     "tests:headed": "npx playwright test --headed",
     "test:specific:headless": "npx playwright test --grep fileName.spec.js",
-    "test:specific:headed": "npx playwright test --headed --grep fileName.spec.js",
-    "test:tag:headless": "npx playwright test --grep @tagName",
-    "test:tag:headed": "npx playwright test --headed --grep @tagName",
+    "test:specific:headed": "npx playwright test --headed --grep fixtures.spec.js",
+    "test:tag:headless": "npx playwright test --grep @wip",
+    "test:tag:headed": "npx playwright test --headed --grep @custom-fixture",
     "test-smoke": "npx playwright test --grep @smoke",
-    "report": "npx playwright show-report"},
+    "report": "npx playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "dotenv": "^17.4.2"
   }
 }
